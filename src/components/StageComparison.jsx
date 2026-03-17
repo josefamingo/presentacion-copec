@@ -18,25 +18,25 @@ export default function StageComparison({ stage, isOpen, onToggle }) {
       {isOpen && (
         <div className="stage-comparison-content">
           <div className="stage-comparison-grid">
-            <div className="comparison-quadrant comparison-program">
+            <section className="comparison-quadrant comparison-program">
               <h4 className="comparison-quadrant-title">Programa A</h4>
               <ul className="comparison-list">
                 {stage.programA.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}
               </ul>
-            </div>
+            </section>
 
-            <div className="comparison-quadrant comparison-program">
+            <section className="comparison-quadrant comparison-program">
               <h4 className="comparison-quadrant-title">Programa B</h4>
               <ul className="comparison-list">
                 {stage.programB.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}
               </ul>
-            </div>
+            </section>
 
-            <div className="comparison-quadrant comparison-unification">
+            <section className="comparison-quadrant comparison-unification">
               <h4 className="comparison-quadrant-title comparison-green">
                 Puntos de unificación
               </h4>
@@ -45,9 +45,9 @@ export default function StageComparison({ stage, isOpen, onToggle }) {
                   <li key={index}>{point}</li>
                 ))}
               </ul>
-            </div>
+            </section>
 
-            <div className="comparison-quadrant comparison-differences">
+            <section className="comparison-quadrant comparison-differences">
               <h4 className="comparison-quadrant-title comparison-orange">
                 Diferencias
               </h4>
@@ -56,7 +56,7 @@ export default function StageComparison({ stage, isOpen, onToggle }) {
                   <li key={index}>{point}</li>
                 ))}
               </ul>
-            </div>
+            </section>
           </div>
         </div>
       )}
