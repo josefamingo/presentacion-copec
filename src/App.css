@@ -182,3 +182,125 @@
     border-right-color: var(--border);
   }
 }
+
+.stage-comparison {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 28px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.stage-comparison-header {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.stage-comparison-header:hover {
+  background: #f8fafc;
+}
+
+.stage-comparison-header-text {
+  max-width: 900px;
+}
+
+.stage-comparison-label {
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.stage-comparison-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0f172a;
+}
+
+.stage-comparison-summary {
+  margin: 10px 0 0;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.stage-comparison-icon {
+  font-size: 2rem;
+  color: #64748b;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.stage-comparison-content {
+  border-top: 1px solid #f1f5f9;
+  padding: 24px;
+}
+
+.stage-comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.comparison-quadrant {
+  border-radius: 22px;
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  min-height: 220px;
+}
+
+.comparison-program {
+  background: #f8fafc;
+}
+
+.comparison-unification {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.comparison-differences {
+  background: #fff7ed;
+  border-color: #fdba74;
+}
+
+.comparison-quadrant-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.comparison-green {
+  color: #047857;
+}
+
+.comparison-orange {
+  color: #c2410c;
+}
+
+.comparison-list {
+  margin: 14px 0 0;
+  padding-left: 18px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.comparison-list li + li {
+  margin-top: 8px;
+}
+
+@media (max-width: 992px) {
+  .stage-comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
